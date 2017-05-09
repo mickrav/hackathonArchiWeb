@@ -31,7 +31,7 @@ module.exports = {
 					req.session.userId = user.id;
 					console.log('req.session');
 					console.log(req.session);
-					return res.redirect('/reservation');
+					return res.redirect('/');
 	    	});
 	   		
 			
@@ -43,7 +43,7 @@ module.exports = {
 	  
 	  req.session.authenticated = false;
 	  req.session.userId = null;
-	  return res.ok('Logged out successfully.');
+	  return res.redirect('/');
 	},
 
 	signup: function (req, res) {

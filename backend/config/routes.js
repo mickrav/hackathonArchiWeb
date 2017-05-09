@@ -37,6 +37,15 @@ module.exports.routes = {
   },
 
   'GET /reservations': 'ReservationController.allReservation',
+  'get /reserver': { view: 'pages/reserver' },
+  'post /reservation': 'ReservationController.createReservation',
+
+  'get /events': { view: 'pages/events' },
+  'get /concept': { view: 'pages/concept' },
+  'get /coworking': { view: 'pages/coworking' },
+  'get /about': { view: 'pages/about' },
+
+
 
 
   /***************************************************************************

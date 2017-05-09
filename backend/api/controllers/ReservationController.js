@@ -25,6 +25,14 @@ module.exports = {
             });
 
         });
+    },
+    createReservation: function (req, res) {
+      Reservation.create(req.params.all()).exec(function (err, reservation) {
+        if (err) {
+            return res.negotiate(err);
+        }
+        return res.redirect('/');
+        });
     }
 };
 
