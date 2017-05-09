@@ -33,8 +33,10 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
-  }
+    view: 'pages/homePage'
+  },
+
+  'GET /reservation': 'ReservationController.allReservation'
 
   /***************************************************************************
   *                                                                          *

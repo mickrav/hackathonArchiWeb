@@ -12,14 +12,15 @@ module.exports = {
   		type: 'string',
   		required: true
   	},
+    
   	start_at: {
-  		type: 'datetime',
-  		required: true
+  		type: 'datetime'
+  		// required: true
   	},
 
   	end_at: {
-  		type: 'datetime',
-  		required: true
+  		type: 'datetime'
+  		// required: true
   	},
 
   	places:{
