@@ -4,6 +4,8 @@ FRAMEWORK SAILS:
 
 configuration: 
 	1. create config/env/development.js:
+
+	
 	//start
 	module.exports = {
 
