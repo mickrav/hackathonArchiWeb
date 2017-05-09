@@ -24,6 +24,7 @@ module.exports = {
           required: true,
           unique: true
     },
+
     password: {
       type: 'string',
       required: true
@@ -42,13 +43,26 @@ module.exports = {
 
     status : { /* active, pending, deactivate */
         type: 'string',
-        required : true,
+        defaultsTo: 'active'
     },
 
     reservation_id:{
     	model: 'reservation'
 
     },
+
+         
+    toJSON: function() {
+            var obj = this.toObject();
+            delete obj.password;
+            return obj;
+        }
+    },
+
+    // admin: {
+    //   type: 'boolean',
+    //   defaultTo: false
+    // },
 
     beforeCreate: function(user, cb) {
         bcrypt.genSalt(10, function(err, salt) {
@@ -66,6 +80,6 @@ module.exports = {
             });
         });
     }
-  }
+
 };
 
