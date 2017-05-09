@@ -19,7 +19,10 @@ module.exports = {
             	  
             	  console.log(items);
 
-            return res.view('pages/reservation');
+            return res.view('pages/reservation', {
+                        title: "Reservation's Page",
+                        items: items
+            });
 
         });
     }
