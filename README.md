@@ -5,7 +5,7 @@ FRAMEWORK SAILS:
 configuration: 
 	1. create config/env/development.js:
 
-	
+
 	//start
 	module.exports = {
 
@@ -58,6 +58,12 @@ configuration:
 		- cmd: npm install
 		- cmd: npm install sails-mysql --save : to add mysql adapter for waterline
 	4. cmd: sails lift 
+
+	POSTMAN 
+	POST http://localhost:1337/reservation?name=resaName&user_id=1
+	GET all reservations http://localhost:1337/reservations
+	POST user : http://localhost:1337/user?firstname=test&lastname=test&email=test@test.com&password=test&status=active
+	GET http://localhost:1337/user
 
 
 
