@@ -1,0 +1,340 @@
+/* *** COMMUN *** */
+* {
+  margin: 0 auto;
+  padding: 0;
+  font-family: sans-serif;
+}
+.clear {clear: both;}
+.floatleft {float: left;}
+@font-face {
+    font-family: "Kenyan Coffee";
+    src: url('fonts/kenyan-coffee-rg.eot');
+    src: url('fonts/kenyan-coffee-rg.otf') format('otf'),
+         url('fonts/kenyan-coffee-rg.ttf')  format('truetype'),
+}
+@font-face {
+    font-family: "Hominis";
+    src: url(fonts/hominis.ttf);
+}
+
+/* *** HEADER *** */
+#header {
+  height: 100px;
+  background-color: #2e2e2e;
+  color: white;
+  position: relative;
+  width: 100%;
+}
+#header .logo {
+  width: 20%;
+  padding-left: 30px;
+}
+#header .menu ul {
+  float: right;
+  right: 100px;
+  position: relative;
+}
+#header .menu ul li {
+  list-style-type: none;
+  padding: 5px 40px;
+  float: left;
+  margin-top: 28px;
+  font-size: 20px;
+
+}
+#header .menu ul li:hover {
+  background-color: grey;
+}
+#header .menu ul li span {
+  font-family: 'Kenyan Coffee', sans-serif;
+}
+#header .menu ul li.reserver {
+  border: solid 2px white;
+  background-color: #434343;
+}
+
+/* *** CONTAINER HP *** */
+#container {width: 100%;}
+/* Carousel */
+#container .carousel {
+  height: 450px;
+  width: 100%;
+  position: inherit;
+}
+#container .carousel img {width: 100%;}
+#container .carousel div.text {
+  margin-top: -370px;
+}
+#container .carousel span.titre-carousel {
+  font-family: 'Hominis', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+#container .carousel span.accroche {
+  font-family: 'Hominis', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 100px;
+}
+#container .carousel span.details {
+  font-family: 'Kenyan Coffee', sans-serif;
+  color: white;
+  font-size: 40px;
+}
+/* Coworking */
+#container .coworking {padding: 30px;}
+#container .coworking h2 {
+  color: black;
+  font-family: 'Kenyan Coffee', sans-serif;
+}
+#container .coworking ul li {
+  list-style: none;
+  width: 320px;
+  margin-left: 32px;
+  float: left;
+}
+#container .coworking ul li:first-child {
+  margin-left: 0 !important
+}
+#container .coworking ul li div.img-coworking {
+  float: left;
+}
+#container .coworking ul li div.desc-coworking {
+  text-align: justify;
+  background-color: white;
+  padding: 0 15px;
+  float: left;
+}
+#container .coworking ul li div.desc-coworking h3 {
+  font-family: 'Kenyan Coffee', sans-serif;
+}
+#container .coworking ul li div.desc-coworking button {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: #6b8b33;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  font-family: 'Futura', sans-serif;
+}
+
+/* Concept */
+#container .concept {
+  width: 100%;
+  height: 388px;
+}
+#container .concept img {
+  width: 100%;
+}
+#container .concept h2 {
+  font-family: "Lobster", sans-serif;
+  color: white;
+  position: relative;
+  margin-top: -295px;
+  font-size: 50px;
+}
+#container .concept p {
+  font-family: "Futura", sans-serif;
+  color: white;
+  width: 50%;
+  margin: 40px auto;
+  font-size: 17px;
+}
+
+/* Coffee Shop */
+#container .coffeeshop {padding: 30px;}
+#container .coffeeshop h2 {
+  color: black;
+  font-family: 'Kenyan Coffee', sans-serif;
+}
+#container .coffeeshop ul li {
+  list-style: none;
+  width: 320px;
+  margin-left: 32px;
+  float: left;
+}
+#container .coffeeshop ul li:first-child {
+  margin-left: 0 !important
+}
+#container .coffeeshop ul li div.img-coffeeshop {
+  float: left;
+}
+#container .coffeeshop ul li div.desc-coffeeshop {
+  text-align: justify;
+  background-color: #e6e6e6;
+  padding: 0 15px;
+  float: left;
+}
+#container .coffeeshop ul li div.desc-coffeeshop h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+}
+#container .coffeeshop ul li div.desc-coffeeshop button {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: #6b8b33;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  font-family: 'Futura', sans-serif;
+}
+
+/* Social */
+#container .social {
+  width: 100%;
+  height: 388px;
+}
+#container .social img {
+  width: 100%;
+}
+#container .social h2 {
+  font-family: "Lobster", sans-serif;
+  color: white;
+  position: relative;
+  margin-top: -340px;
+  font-size: 50px;
+}
+#container .social p {
+  font-family: "Futura", sans-serif;
+  color: white;
+  width: 66%;
+  margin: 40px auto;
+  font-size: 17px;
+}
+#container .social .temoignage {
+  width: 60%;
+}
+#container .social .temoignage span:first-child {
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 100px;
+  color: white;
+  float: left;
+  position: relative;
+  font-style: italic;
+  margin-top: -40px;
+}
+#container .social .temoignage span:last-child {
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 100px;
+  color: white;
+  float: right;
+  position: relative;
+  font-style: italic;
+  margin-top: -75px;
+}
+#container .social .signature {
+  margin: auto;
+  max-width: 20%;
+}
+#container .social .signature img {
+  max-width: 75px;
+  float: left;
+  position: relative;
+  margin-right: 20px;
+}
+
+/* Events */
+#container .events {padding: 30px;}
+#container .events h2 {
+  color: black;
+  font-family: 'Kenyan Coffee', sans-serif;
+}
+#container .events ul li {
+  list-style: none;
+  width: 320px;
+  margin-left: 32px;
+  float: left;
+}
+#container .events ul li:first-child {
+  margin-left: 0 !important
+}
+#container .events ul li div.img-events {
+  float: left;
+}
+#container .events ul li div.desc-events {
+  text-align: justify;
+  background-color: white;
+  padding: 0 15px;
+  float: left;
+}
+#container .events ul li div.desc-events h3 {
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#container .events ul li div.desc-events button {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: #6b8b33;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  font-family: 'Futura', sans-serif;
+}
+/* *** FOOTER *** */
+#footer {
+  width: 100%;
+  background-color: #1e1e1e;
+}
+
+/* Contact */
+#footer .contact {
+  background-color: #2e2e2e;
+  width: 100%;
+  height: 330px;
+  position: relative;
+  float: left;
+}
+#footer .contact .w33pc {width: 33%;}
+#footer .contact .contact-block {
+  margin-left: 3px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+#footer .contact .contact-block h3 {
+  font-family: 'Kenyan Coffee', sans-serif;
+  color: white;
+  text-transform: uppercase;
+}
+#footer .contact .contact-block form input:first-child {margin-right: 10px;}
+#footer .contact .contact-block form input.email {width: 54%;}
+#footer .contact .contact-block form textarea {
+  height: 120px;
+  padding: 5px;
+  width: 90%;
+  margin: 13px 0 10px;
+}
+#footer .contact .contact-block form .submit {
+  margin-bottom: 15px;
+  margin-top: 0;
+  background-color: #6b8b33;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  font-family: 'Futura', sans-serif;
+
+}
+
+/* Bottom Footer */
+#footer .bottom-footer {
+  background-color: #1e1e1e;
+  width: 45%;
+  height: 60px;
+  position: relative;
+  clear: both;
+  padding: 20px 0;
+  text-align: center;
+  margin: auto;
+}
+#footer .bottom-footer ul li {
+  float: left;
+  list-style: none;
+  padding: 0 20px;
+}
+#footer .bottom-footer ul li a {
+  float: left;
+  list-style: none;
+  color: white;
+  padding: 0 20px;
+}
