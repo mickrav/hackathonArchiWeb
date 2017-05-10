@@ -8,35 +8,35 @@
 .white      {color: white;}
 @font-face {
     font-family: "Kenyan Coffee";
-    src: url('fonts/kenyan-coffee-rg.eot');
-    src: url('fonts/kenyan-coffee-rg.otf') format('otf'),
-         url('fonts/kenyan-coffee-rg.ttf') format('truetype'),
+    src: url('/fonts/kenyan-coffee-rg.eot');
+    src: url('/fonts/kenyan-coffee-rg.otf') format('otf'),
+         url('/fonts/kenyan-coffee-rg.ttf') format('truetype'),
 }
 @font-face {
     font-family: "Hominis";
-    src: url('fonts/hominis.ttf') format('truetype');
+    src: url('/fonts/hominis.ttf') format('truetype');
 }
 @font-face {
     font-family: "Langdon";
-    src: url('fonts/langdon.otf') format('otf');
+    src: url('/fonts/langdon.otf') format('otf');
 }
 @font-face {
     font-family: "Futura Condensed";
-    src: url('fonts/futura-condensed.ttf') format('truetype'),
-         url('fonts/futura-condensed.otf') format('otf');
+    src: url('/fonts/futura-condensed.ttf') format('truetype'),
+         url('/fonts/futura-condensed.otf') format('otf');
 }
 @font-face {
     font-family: "OpenSans Light";
-    src: url('fonts/open-sans-light.ttf') format('truetype'),
-         url('fonts/futura-condensed.otf') format('otf');
+    src: url('/fonts/open-sans-light.ttf') format('truetype'),
+         url('/fonts/futura-condensed.otf') format('otf');
 }
 @font-face {
     font-family: "OpenSans Condensed Bold";
-    src: url('fonts/open-sans-cond-bold.ttf') format('truetype'),
+    src: url('/fonts/open-sans-cond-bold.ttf') format('truetype'),
 }
 @font-face {
     font-family: "OpenSans Condensed Light";
-    src: url('fonts/OpenSans-CondLight.ttf') format('truetype'),
+    src: url('/fonts/OpenSans-CondLight.ttf') format('truetype'),
 }
 
 /* *** CONTAINER HP *** */
@@ -84,7 +84,7 @@ span.details {
 
 /* Concept */
 .concept {
-  background: url('../img/concept/bg-concept-1.jpg') center top no-repeat;
+  background: url('/images/concept/bg-concept-1.jpg') center top no-repeat;
   background-size: cover;
   padding: 100px 300px;
   margin: 30px 0 0;
@@ -120,7 +120,7 @@ img {width: 100%;}
 
 /* Social */
 .social {
-  background: url('../img/social/bg-social-1.jpg') center top no-repeat;
+  background: url('/images/social/bg-social-1.jpg') center top no-repeat;
   background-size: cover;
   padding: 40px 300px;
   margin: 30px 0 0;
@@ -366,7 +366,7 @@ align-items: flex-end;
 /* *** CONTAINER RESERVATION *** */
 /* Titre */
 #reservation .titre {
-    background: url('../img/reservation/bg-reservation-titre.jpg') center top no-repeat;
+    background: url('/images/reservation/bg-reservation-titre.jpg') center top no-repeat;
     background-size: cover;
     padding-top: 30px;
 }
