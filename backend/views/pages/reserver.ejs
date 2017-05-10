@@ -1,22 +1,28 @@
 <h1>Signup</h1>
-<form action="/reservation" method="post">
+<div class="container" style='margin-top: 5%;'>
+    <div class="row">
+      <div class="col-md-8">
+        <form action="/reservation" method="post">
 
-  <label for="name">name</label>
-  <input name="name" type="text"/>
-  <br/>
-  <label for="start_at">start_at</label>
-  <input name="start_at" type="date"/>
-  <br/>
-  <label for="end_at">end_at</label>
-  <input name="end_at" type="date"/>
-  <br/>
+          <label for="name">name</label>
+          <input name="name" type="text"/>
+          <br/>
+          <label for="start_at">start_at</label>
+          <input name="start_at" type="date"/>
+          <br/>
+          <label for="end_at">end_at</label>
+          <input name="end_at" type="date"/>
+          <br/>
 
-  <label for="place">place</label>
-  <input name="place" type="checkbox"/>
-  <br/>
+          <label for="place">place</label>
+          <input name="place" type="checkbox"/>
+          <br/>
 
-  <input hidden name="user_id" value='1'/>
-  <br/>
+          <input hidden name="user_id" value='1'/>
+          <br/>
 
-  <input type="submit"/>
-</form>
+          <input type="submit"/>
+        </form>
+        </div>
+    </div>
+</div>
