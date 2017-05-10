@@ -13,7 +13,10 @@ module.exports = {
   	},
   	image:{//source
         type:'string'
-    }, 
+    },
+    description:{
+    	type: 'string'
+    },
   	status:{
   		type:'string', //dispo, indisponible 
   		defaultTo: 'dispo'

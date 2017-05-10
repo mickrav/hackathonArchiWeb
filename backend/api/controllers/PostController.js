@@ -56,26 +56,74 @@ module.exports = {
     },
 
     allPost: function(req, res){
-        Post.find({})
+        async.auto({
+            getPost: function(cb){
+            Post.find({})
             .limit(4)
             .sort('createdAt DESC')
                 // .populate('users')
                 // .populate('leaderId')
-                .exec(function(err, items) {
-                  if (err) {
-                      console.log(items);
-                      console.log(err);
-                      return res.serverError('ITEM-UNKOWN');
-                  }
+            .exec(function(err, posts) {
+                if (err) {
+                    console.log(items);
+                    console.log(err);
+                    return res.serverError('ITEM-UNKOWN');
+                }
                   
-                  console.log(items);
+                cb(null, posts);
+                });
+            },
+
+            getEvent: function(cb){
+                Event.find({})
+                    .limit(4)
+                    .sort('createdAt DESC')
+                        // .populate('users')
+                        // .populate('leaderId')
+                    .exec(function(err, posts) {
+                        if (err) {
+                            console.log(items);
+                            console.log(err);
+                            return res.serverError('ITEM-UNKOWN');
+                        }
+                          
+                        cb(null, posts);
+                        });
+
+            },
+            getShop: function(cb){
+                Shop.find({})
+                    .limit(4)
+                    .sort('createdAt DESC')
+                        // .populate('users')
+                        // .populate('leaderId')
+                    .exec(function(err, posts) {
+                        if (err) {
+                            console.log(items);
+                            console.log(err);
+                            return res.serverError('ITEM-UNKOWN');
+                        }
+                          
+                        cb(null, posts);
+                        });
+            },
+
+        }, function(err, results){
+            if(err) {
+                    return res.serverError('ITEM-ERROR')
+                };
+
+            console.log(results);
+
 
             return res.view('pages/homePage', {
                         title: "Home Page",
-                        items: items
+                        itemsPost: results.getPost,
+                        itemsEvent: results.getEvent,
+                        itemsShop: results.getShop,
             });
-
         });
+        
     },
 };
 

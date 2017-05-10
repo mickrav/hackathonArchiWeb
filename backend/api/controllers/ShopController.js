@@ -26,7 +26,7 @@ module.exports = {
         
         var name = req.param('name');
         var price = req.param('price');
-
+        var description = req.param('description');
         // console.log(documentUpload);
 
         documentUpload.upload({ dirname: '../../assets/uploaded/images' }, function onUploadComplete(err, files) {
@@ -37,6 +37,7 @@ module.exports = {
             // console.log(files);
             var data = {
                 "name": name,
+                "description": description,
                 "price": price,
                 "image": files[0]['fd'].match(/[^\/]+$/)[0]
             };
@@ -44,7 +45,7 @@ module.exports = {
             console.log(data);
 
 
-            Post.create(data).exec(function(err, post) {
+            Shop.create(data).exec(function(err, post) {
                 if (err) res.serverError(err);
 
 

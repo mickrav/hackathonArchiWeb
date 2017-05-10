@@ -64,31 +64,32 @@
 
 
       <!-- *** COWORKING *** -->
-      	<div class="row coworking">
+      	<div id="coworking" class="row coworking">
         	<div class="row">
           		<h2>LE COWORKING</h2>
         	</div>
-			    
-			<% for(var i=0; i<items.length; i++) { %>
+			   
+			<% for(var i=0; i<itemsPost.length; i++) { %>
 
 		        <div class="col-md-3">
 		          <div class="row">
-		            <img src="/uploaded/images/<%= items[i].image %>" alt="Le salon principal">
+		            <img src="/uploaded/images/<%= itemsPost[i].image %>" alt="Le salon principal">
 		          </div>
 		          <div class="row bg-white desc-coworking text-justify">
-		            <h3><%= items[i].title %></h3>
-		            <p><%= items[i].title %></p>
+		            <h3><%= itemsPost[i].title %></h3>
+		            <p><%= itemsPost[i].title %></p>
 		            <button type="button" name="button">En savoir plus</button>
 		          </div>
 		        </div>
 		      
 
 		    <% } %>
+
 		</div>
 
 
       <!-- *** CONCEPT *** -->
-      <div class="row concept white">
+      <div id="about" class="row concept white">
         <div class="col-md-12">
           <h2 class="text-center">Le concept Gusto coffee</h2>
           <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus.</p>
@@ -98,20 +99,29 @@
 
 
       <!-- *** COFFEE SHOP *** -->
+
       <div class="row coffeeshop">
         <div class="row">
           <h2>LE COFFEE-SHOP</h2>
         </div>
-        <div class="col-md-3">
-          <div class="row">
-            <img src="/images/coffeeshop/offre-1.jpg" alt="Offre 1">
-          </div>
-          <div class="row bg-lightgrey desc-coffeeshop text-justify">
-            <h3>Le salon principal</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
-            <button type="button" name="button">En savoir plus</button>
-          </div>
-        </div>
+
+		<% for(var i=0; i<itemsShop.length; i++) { %>
+
+		        <div class="col-md-3">
+		          <div class="row">
+		            <img src="/uploaded/images/<%= itemsShop[i].image %>" alt="Offre 1">
+		          </div>
+		          <div class="row bg-lightgrey desc-coffeeshop text-justify">
+		            <h3><%= itemsShop[i].name %></h3>
+		            <p><%= itemsShop[i].description %></p>
+		            <button type="button" name="button">En savoir plus</button>
+		          </div>
+		        </div>
+		      
+
+		    <% } %>
+
+        
       </div>
 
       <!-- *** SOCIAL *** -->
@@ -131,20 +141,29 @@
       </div>
 
       <!-- *** EVENTS *** -->
-      <div class="row events">
+
+
+      <div id="events" class="row events">
         <div class="row">
           <h2>LES EVENTS</h2>
         </div>
-        <div class="col-md-3">
-          <div class="row">
-            <img src="/images/events/event-1.jpg" alt="Networking">
-          </div>
-          <div class="row bg-white desc-events text-justify">
-            <h3>NETWORKING</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
-            <button type="button" name="button">En savoir plus</button>
-          </div>
-        </div>
+
+        <% for(var i=0; i<itemsEvent.length; i++) { %>
+
+		        <div class="col-md-3">
+		          <div class="row">
+		            <img src="/uploaded/images/<%= itemsEvent[i].image %>" alt="Networking">
+		          </div>
+		          <div class="row bg-white desc-events text-justify">
+		            <h3><%= itemsEvent[i].name %></h3>
+		            <p><%= itemsEvent[i].description %></p>
+		            <button type="button" name="button">En savoir plus</button>
+		          </div>
+		        </div>
+
+		    <% } %>
+		    
+        
       </div>
     </div>
 
