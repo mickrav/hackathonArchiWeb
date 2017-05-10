@@ -59,6 +59,9 @@ configuration:
 		- cmd: npm install sails-mysql --save : to add mysql adapter for waterline
 	4. cmd: sails lift 
 
+	/////////////////////////
+	////////TESTING///////////
+	/////////////////////////
 	test with POSTMAN
 
 	///////RESERVATION////////////
@@ -106,6 +109,26 @@ configuration:
 	- Show all event GET
 		http://localhost:1337/event
 	///////////////////////
+
+	////End POSTMAN///
+
+	//////////////////////ACCESS BACKOFFICE/////////////////
+	Url Website:
+	http://coffeeshop.sur.paris/
+
+	sign in with:
+
+	email: admin@coffeeshop.com
+	passwd: AdminPage!
+
+	All CRUD Work with:
+	http://coffeeshop.sur.paris/post //CRUD post
+	http://coffeeshop.sur.paris/chat //CRUD chat
+	http://coffeeshop.sur.paris/event //CRUD event 
+	http://coffeeshop.sur.paris/service //CRUD service item
+	http://coffeeshop.sur.paris/shop //CRUD shop item
+	
+
 
 
 
