@@ -32,9 +32,7 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'pages/homePage'
-  },
+  '/': 'PostController.allPost',
 
   /***********************Admin****************/
 
@@ -44,8 +42,12 @@ module.exports.routes = {
    'get /admin/post': {
     view: 'pages/admin/post'
   },
-  
   'post /admin/post/article': 'PostController.upload',
+
+  'get /admin/shop': {
+    view: 'pages/admin/shop'
+  },
+  'post /admin/shop/article': 'ShopController.upload',
 
    /***********************Reservations****************/ 
 
@@ -54,9 +56,9 @@ module.exports.routes = {
   'post /reservation': 'ReservationController.createReservation',
 
   'get /events': { view: 'pages/events' },
-  'get /concept': { view: 'pages/concept' },
-  'get /coworking': { view: 'pages/coworking' },
   'get /about': { view: 'pages/about' },
+  'get /coworking': { view: 'pages/coworking' },
+  'get /coffeeShop': { view: 'pages/coffeeShop' },
 
 
 

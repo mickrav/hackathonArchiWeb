@@ -45,7 +45,22 @@
         <h2>LE COWORKING</h2>
         <div>
           <ul>
-            <li>
+          	<% for(var i=0; i<items.length; i++) { %>
+			        <li>
+			        	<div class="coworking-block">
+			        		<div class="img-coworking">
+								<img src="/uploaded/images/<%= items[i].image %>" alt="Le salon principal">
+			        		</div>
+							<div class="desc-coworking">
+								<h3><%= items[i].title %></h3>
+					            <p><%= items[i].article %></p>
+					            <button type="button" name="button">En savoir plus</button>
+							</div>
+				            
+				        </div>
+			        </li>
+			    <% } %>
+            <!-- <li>
               <div class="coworking-block">
                 <div class="img-coworking">
                   <img src="/images/coworking/salon-principal.jpg" alt="Le salon principal">
@@ -56,8 +71,8 @@
                   <button type="button" name="button">En savoir plus</button>
                 </div>
               </div>
-            </li>
-            <li>
+            </li> -->
+            <!-- <li>
               <div class="coworking-block">
                 <div class="img-coworking">
                   <img src="/images/coworking/salon-principal.jpg" alt="Un espace de coworking privilégié">
@@ -68,8 +83,8 @@
                   <button type="button" name="button">En savoir plus</button>
                 </div>
               </div>
-            </li>
-            <li>
+            </li> -->
+            <!-- <li>
               <div class="coworking-block">
                 <div class="img-coworking">
                   <img src="/images/coworking/salon-principal.jpg" alt="Les salons privés">
@@ -80,8 +95,8 @@
                   <button type="button" name="button">En savoir plus</button>
                 </div>
               </div>
-            </li>
-            <li>
+            </li> -->
+            <!-- <li>
               <div class="coworking-block">
                 <div class="img-coworking">
                   <img src="/images/coworking/salon-principal.jpg" alt="Un espace moderne et design">
@@ -92,7 +107,7 @@
                   <button type="button" name="button">En savoir plus</button>
                 </div>
               </div>
-            </li>
+            </li> -->
           </ul>
         </div>
       </div>

@@ -53,6 +53,29 @@ module.exports = {
                 return res.redirect('/');
             });
         });
-    }
+    },
+
+    allPost: function(req, res){
+        Post.find({})
+            .limit(4)
+            .sort('createdAt DESC')
+                // .populate('users')
+                // .populate('leaderId')
+                .exec(function(err, items) {
+                  if (err) {
+                      console.log(items);
+                      console.log(err);
+                      return res.serverError('ITEM-UNKOWN');
+                  }
+                  
+                  console.log(items);
+
+            return res.view('pages/homePage', {
+                        title: "Home Page",
+                        items: items
+            });
+
+        });
+    },
 };
 

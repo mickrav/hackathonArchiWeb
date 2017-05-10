@@ -8,7 +8,19 @@
 module.exports = {
 
   attributes: {
-  	
+  	name: {
+  		type: 'string'
+  	},
+  	image:{//source
+        type:'string'
+    }, 
+  	status:{
+  		type:'string', //dispo, indisponible 
+  		defaultTo: 'dispo'
+  	},
+  	price: {
+  		type: 'float'
+  	}
   }
 };
 

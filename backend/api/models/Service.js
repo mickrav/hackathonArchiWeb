@@ -13,16 +13,17 @@ module.exports = {
   		required: 'string'
   	},
   	name: {
-  		type: 'string',
-  		required: 'string'
+  		type: 'string'
   	},
   	status:{
   		type:'string' //dispo, indisponible 
-
   	},
   	price: {
   		type: 'float'
-  	}
+  	},
+    image:{//source
+        type:'string'
+    }
   }
 };
 
