@@ -1,0 +1,449 @@
+/* *** COMMUN *** */
+/* Backgrounds-Colors */
+.bg-grey      {background-color: #e9e9e8;}
+.bg-lightgrey {background-color: #e6e6e6;}
+.bg-white     {background-color: white;}
+/* Colors */
+.darkgrey   {color: #2e2e2e;}
+.white      {color: white;}
+@font-face {
+    font-family: "Kenyan Coffee";
+    src: url('fonts/kenyan-coffee-rg.eot');
+    src: url('fonts/kenyan-coffee-rg.otf') format('otf'),
+         url('fonts/kenyan-coffee-rg.ttf') format('truetype'),
+}
+@font-face {
+    font-family: "Hominis";
+    src: url('fonts/hominis.ttf') format('truetype');
+}
+@font-face {
+    font-family: "Langdon";
+    src: url('fonts/langdon.otf') format('otf');
+}
+@font-face {
+    font-family: "Futura Condensed";
+    src: url('fonts/futura-condensed.ttf') format('truetype'),
+         url('fonts/futura-condensed.otf') format('otf');
+}
+@font-face {
+    font-family: "OpenSans Light";
+    src: url('fonts/open-sans-light.ttf') format('truetype'),
+         url('fonts/futura-condensed.otf') format('otf');
+}
+@font-face {
+    font-family: "OpenSans Condensed Bold";
+    src: url('fonts/open-sans-cond-bold.ttf') format('truetype'),
+}
+@font-face {
+    font-family: "OpenSans Condensed Light";
+    src: url('fonts/OpenSans-CondLight.ttf') format('truetype'),
+}
+
+/* *** CONTAINER HP *** */
+/* Carousel */
+div.carousel-inner .item img {width: 100%;}
+div.carousel-caption {
+  top: 50px;
+}
+span.titre-carousel {
+  font-family: 'Hominis', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+span.accroche {
+  font-family: 'Langdon', sans-serif;
+  color: white;
+  text-transform: lowercase;
+  font-size: 150px;
+}
+span.details {
+  font-family: 'Kenyan Coffee', sans-serif;
+  color: white;
+  font-size: 40px;
+}
+
+/* Coworking */
+.coworking h2 {
+  padding: 5px 0px 0 20px;
+  color: black;
+  font-family: 'Kenyan Coffee', sans-serif;
+}
+.coworking img {width: 100%;}
+.coworking .desc-coworking {padding: 0 15px;}
+.coworking h3 {font-family: 'Kenyan Coffee', sans-serif;}
+.coworking button {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: #6b8b33;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  font-family: 'Futura', sans-serif;
+}
+
+/* Concept */
+.concept {
+  background: url('../img/concept/bg-concept-1.jpg') center top no-repeat;
+  background-size: cover;
+  padding: 100px 300px;
+  margin: 30px 0 0;
+}
+.concept h2 {
+  font-family: "Lobster", sans-serif;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.concept p {
+  font-family: "Futura Condensed", sans-serif;
+  font-size: 17px;
+}
+
+/* Coffee Shop */
+.coffeeshop h2 {
+  padding: 5px 0px 0 20px;
+  color: black;
+  font-family: 'Kenyan Coffee', sans-serif;
+}
+img {width: 100%;}
+.coffeeshop .desc-coffeeshop {padding: 0 15px;}
+.coffeeshop h3 {font-family: 'Kenyan Coffee', sans-serif;}
+.coffeeshop button {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: #6b8b33;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  font-family: 'Futura', sans-serif;
+}
+
+/* Social */
+.social {
+  background: url('../img/social/bg-social-1.jpg') center top no-repeat;
+  background-size: cover;
+  padding: 40px 300px;
+  margin: 30px 0 0;
+}
+.social h2 {
+  font-family: "Lobster", sans-serif;
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+.social p {
+  font-family: "Futura Condensed", sans-serif;
+  font-size: 17px;
+  padding: 0px 120px;
+}
+.social span.guillemets-left,
+.social span.guillemets-right {
+  font-family: 'Open Sans Bold', sans-serif;
+  font-size: 100px;
+  position: relative;
+  font-style: italic;
+  margin-top: -40px;
+}
+.social span.guillemets-left {float: left;}
+.social span.guillemets-right {float: right;}
+.social .signature {
+  margin: auto;
+  margin-left: 35%;
+  float: left;
+}
+.social .signature img {
+  max-width: 75px;
+  float: left;
+  position: relative;
+  margin-right: 20px;
+}
+
+/* Events */
+.events h2 {
+  padding: 5px 0px 0 20px;
+  color: black;
+  font-family: 'Kenyan Coffee', sans-serif;
+}
+img {width: 100%;}
+.events .desc-events {padding: 0 15px;}
+.events h3 {font-family: 'Kenyan Coffee', sans-serif;}
+.events button {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  background-color: #6b8b33;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  font-family: 'Futura', sans-serif;
+}
+
+
+/* Footer */
+.footer {
+  margin: 30px 0 0;
+  background-color: #2e2e2e;
+}
+.footer h3 {
+  font-family: 'Kenyan Coffee', sans-serif;
+  text-transform: uppercase;
+}
+/* Contact */
+.contact {
+  position: relative;
+  float: left;
+}
+.contact .w33pc {width: 33%;}
+.contact .contact-block {
+  margin-left: 3px;
+  padding-top: 10px;
+  padding-left: 15px;
+}
+.contact form input:first-child {
+  margin-right: 10px;
+  padding: 5px;
+}
+.contact form input.email {
+  width: 51%;
+  padding: 5px;
+}
+.contact form textarea {
+  height: 120px;
+  padding: 5px;
+  width: 90%;
+  margin: 13px 0 10px;
+}
+.contact form .submit {
+  margin-bottom: 15px;
+  margin-top: 0;
+  background-color: #6b8b33;
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  font-family: 'Futura', sans-serif;
+}
+
+/* Infos */
+.horaires p {
+  font-family: 'OpenSans Light', sans-serif;
+  font-weight: lighter;
+  padding: 10px 0 0;
+}
+.follow .reseaux {
+    padding: 10px 0 0;
+}
+
+/* Bottom Footer */
+.bottom-footer {
+  background-color: #1e1e1e;
+  height: 60px;
+  padding: 20px 0;
+}
+.bottom-footer a {
+  color: white;
+  padding: 0 20px;
+}
+
+/* Chat */
+.chat .col-md-2, .chat .col-md-10{
+  padding:0;
+}
+.panel{
+  margin-bottom: 0px;
+}
+.chat-window{
+  bottom:0;
+  position:fixed;
+  float:right;
+  margin-left:10px;
+  z-index: 999999;
+  right: 0;
+}
+.chat-window > div > .panel{
+  border-radius: 5px 5px 0 0;
+}
+.icon_minim{
+  padding:2px 10px;
+}
+.msg_container_base{
+background: #e5e5e5;
+margin: 0;
+padding: 0 10px 10px;
+max-height:300px;
+overflow-x:hidden;
+}
+.top-bar {
+background: #666;
+color: white;
+padding: 10px;
+position: relative;
+overflow: hidden;
+}
+.msg_receive{
+  padding-left:0;
+  margin-left:0;
+}
+.msg_sent{
+  padding-bottom:20px !important;
+  margin-right:0;
+}
+.messages {
+background: white;
+padding: 10px;
+border-radius: 2px;
+box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+max-width:100%;
+}
+.messages > p {
+  font-size: 13px;
+  margin: 0 0 0.2rem 0;
+}
+.messages > time {
+  font-size: 11px;
+  color: #ccc;
+}
+.msg_container {
+  padding: 10px;
+  overflow: hidden;
+  display: flex;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.avatar {
+  position: relative;
+}
+.base_receive > .avatar:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid #FFF;
+  border-left-color: rgba(0, 0, 0, 0);
+  border-bottom-color: rgba(0, 0, 0, 0);
+}
+
+.base_sent {
+justify-content: flex-end;
+align-items: flex-end;
+}
+.base_sent > .avatar:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid white;
+  border-right-color: transparent;
+  border-top-color: transparent;
+  box-shadow: 1px 1px 2px rgba(black, 0.2); // not quite perfect but close
+}
+
+.msg_sent > time{
+  float: right;
+}
+
+.msg_container_base::-webkit-scrollbar-track
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+  background-color: #F5F5F5;
+}
+
+.msg_container_base::-webkit-scrollbar
+{
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.msg_container_base::-webkit-scrollbar-thumb
+{
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+  background-color: #555;
+}
+
+/* *** CONTAINER RESERVATION *** */
+/* Titre */
+#reservation .titre {
+    background: url('../img/reservation/bg-reservation-titre.jpg') center top no-repeat;
+    background-size: cover;
+    padding-top: 30px;
+}
+#reservation .titre h1 {
+  font-family: 'Hominis', sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 50px;
+}
+
+#reservation .titre p {
+  font-family: 'Langdon', sans-serif;
+  color: white;
+  text-transform: lowercase;
+  font-size: 150px;
+}
+
+/* Réservation */
+#reservation .accueil-reservation {
+  font-family: 'Kenyan Coffee', sans-serif;
+  text-transform: uppercase;
+}
+#reservation .choix h3,
+#reservation .espaces-plus h3,
+#reservation .recap-reservation h3,
+#reservation .espaces-travail h3 {
+  font-family: 'Kenyan Coffee', sans-serif;
+  text-transform: uppercase;
+  font-size: 45px;
+}
+#reservation .choix h4 {
+  font-family: 'OpenSans Condensed Bold', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+#reservation .choix h5 {
+  font-family: 'OpenSans Condensed Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+  color: #6b8b33;
+}
+#reservation .espaces-travail h4,
+#reservation .espaces-plus h4 {
+  font-family: 'OpenSans Condensed Bold', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+}
+#reservation .espaces-travail img {max-width: 1000px;}
+#reservation .espaces-plus form .titre-label {
+  font-family: 'OpenSans Condensed Bold', sans-serif;
+  font-weight: bold;
+}
+#reservation .espaces-plus form label.checkbox {
+  margin-left: 50px;
+  display: inline-block;
+    font-family: 'OpenSans Condensed Light', sans-serif;
+    font-weight: lighter;
+}
+#reservation .choix form input.date-box,
+#reservation .recap-horaires form select.creneau {
+  width: 140px;
+  font-family: 'Kenyan Coffee', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+#reservation .recap-day div {
+  padding: 20px 30px;
+  border: solid 1px grey;
+}
+#reservation .recap-reservation {
+  padding-bottom: 30px;
+}
+#reservation .recap-reservation div.suppr {
+  padding: 20px 30px;
+  border: none;
+  font-weight: bold;
+}

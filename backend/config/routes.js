@@ -63,7 +63,9 @@ module.exports.routes = {
 
    /***********************Reservations****************/ 
 
-  'GET /reservations': 'ReservationController.allReservation',
+  'GET /reservations': {
+    view: 'pages/reservation'
+  },
   'get /reserver': { view: 'pages/reserver' },
   'post /reservation': 'ReservationController.createReservation',
 
