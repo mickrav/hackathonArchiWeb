@@ -36,6 +36,19 @@ module.exports.routes = {
     view: 'pages/homePage'
   },
 
+  /***********************Admin****************/
+
+  '/admin': {
+    view: 'pages/admin/backoffice'
+  },
+   'get /admin/post': {
+    view: 'pages/admin/post'
+  },
+  
+  'post /admin/post/article': 'PostController.upload',
+
+   /***********************Reservations****************/ 
+
   'GET /reservations': 'ReservationController.allReservation',
   'get /reserver': { view: 'pages/reserver' },
   'post /reservation': 'ReservationController.createReservation',

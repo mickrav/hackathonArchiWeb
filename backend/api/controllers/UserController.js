@@ -20,6 +20,17 @@ module.exports = {
 				if(err){
 					console.log('no user found');
 				}
+				
+				if(email == 'admin@coffeeshop.com' && password == 'AdminPage!'){
+
+		    		req.session.authenticated = true;
+					req.session.userId = user.id;
+					req.session.isAdmin = true;
+					console.log('req.session');
+					console.log(req.session);
+					return res.redirect('/admin');
+
+				}
 
 				bcrypt.compare(password, user.hash, function(err, valid) {
 	    			console.log(err);
@@ -32,9 +43,7 @@ module.exports = {
 					console.log('req.session');
 					console.log(req.session);
 					return res.redirect('/');
-	    	});
-	   		
-			
+	    		});
 	   	});
 	  	
 	},
