@@ -1,0 +1,279 @@
+
+    <!-- *** HEADER *** -->
+
+    <!-- <div id="header" class="col-lg-12 floatleft">
+      <div class="logo floatleft">
+        <img src="/images/logo-gusto-coffee.jpg" alt="Gusto Coffee">
+      </div>
+      <div class="menu">
+        <ul>
+          <li>
+            <span class="text-center">Le concept</span>
+          </li>
+          <li>
+            <span class="text-center">Le coffee-shop</span>
+          </li>
+          <li>
+            <span class="text-center">Le coworking</span>
+          </li>
+          <li>
+            <span class="text-center">Events</span>
+          </li>
+          <li class="reserver">
+            <span class="text-center">Réserver</span>
+          </li>
+        </ul>
+      </div>
+    </div> -->
+	
+
+    <!-- *** CONTAINER *** -->
+
+
+    <div id="container" class="clear floatleft">
+      <div class="carousel">
+        <div>
+          <img src="/images/carousel/slider-01.jpg" alt="Un lieu unique">
+          <div class="text text-center">
+            <span class="titre-carousel">Un lieu</span><br />
+            <span class="accroche">unique</span><br />
+            <span class="details">Coffee-shop • Coworking</span><br />
+          </div>
+        </div>
+      </div>
+      <div class="coworking clear floatleft">
+        <h2>LE COWORKING</h2>
+        <div>
+          <ul>
+          	<% for(var i=0; i<items.length; i++) { %>
+			        <li>
+			        	<div class="coworking-block">
+			        		<div class="img-coworking">
+								<img src="/uploaded/images/<%= items[i].image %>" alt="Le salon principal">
+			        		</div>
+							<div class="desc-coworking">
+								<h3><%= items[i].title %></h3>
+					            <p><%= items[i].article %></p>
+					            <button type="button" name="button">En savoir plus</button>
+							</div>
+				            
+				        </div>
+			        </li>
+			    <% } %>
+            <!-- <li>
+              <div class="coworking-block">
+                <div class="img-coworking">
+                  <img src="/images/coworking/salon-principal.jpg" alt="Le salon principal">
+                </div>
+                <div class="desc-coworking">
+                  <h3>Le salon principal</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li> -->
+            <!-- <li>
+              <div class="coworking-block">
+                <div class="img-coworking">
+                  <img src="/images/coworking/salon-principal.jpg" alt="Un espace de coworking privilégié">
+                </div>
+                <div class="desc-coworking">
+                  <h3>Un espace de coworking privilégié</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li> -->
+            <!-- <li>
+              <div class="coworking-block">
+                <div class="img-coworking">
+                  <img src="/images/coworking/salon-principal.jpg" alt="Les salons privés">
+                </div>
+                <div class="desc-coworking">
+                  <h3>Les salons privés</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li> -->
+            <!-- <li>
+              <div class="coworking-block">
+                <div class="img-coworking">
+                  <img src="/images/coworking/salon-principal.jpg" alt="Un espace moderne et design">
+                </div>
+                <div class="desc-coworking">
+                  <h3>Un espace moderne et design</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+      <div class="concept clear floatleft">
+        <img src="/images/concept/bg-concept-1.jpg" alt="Le concept Gusto Coffee">
+        <h2 class="text-center">Le concept Gusto coffee</h2>
+        <p class="text-center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus.
+        </p>
+      </div>
+      <div class="coffeeshop clear floatleft">
+        <h2>LE COFFEE-SHOP</h2>
+        <div>
+          <ul>
+            <li>
+              <div class="coffeeshop-block">
+                <div class="img-coffeeshop">
+                  <img src="/images/coffeeshop/offre-1.jpg" alt="Article 1">
+                </div>
+                <div class="desc-coffeeshop">
+                  <h3>Article 1</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="coffeeshop-block">
+                <div class="img-coffeeshop">
+                  <img src="/images/coffeeshop/offre-2.jpg" alt="Article 2">
+                </div>
+                <div class="desc-coffeeshop">
+                  <h3>Article 2</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="coffeeshop-block">
+                <div class="img-coffeeshop">
+                  <img src="/images/coffeeshop/offre-3.jpg" alt="Article 3">
+                </div>
+                <div class="desc-coffeeshop">
+                  <h3>Article 3</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="coffeeshop-block">
+                <div class="img-coffeeshop">
+                  <img src="/images/coffeeshop/offre-4.jpg" alt="Article 4">
+                </div>
+                <div class="desc-coffeeshop">
+                  <h3>Article 4</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="social clear floatleft">
+        <img src="/images/social/bg-social-1.jpg" alt="Ils nous ont fait confiance !">
+        <h2 class="text-center">Ils nous ont fait confiance !</h2>
+        <div class="temoignage">
+          <span>"</span>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus.
+          </p>
+          <span>"</span>
+        </div>
+        <div class="signature">
+          <img src="/images/social/profil.png" alt="Lisa Leblanc">
+          <p>Lisa Leblanc <br />
+          Airbnb</p>
+        </div>
+      </div>
+      <div class="events clear floatleft">
+        <h2>LES EVENTS</h2>
+        <div>
+          <ul>
+            <li>
+              <div class="events-block">
+                <div class="img-events">
+                  <img src="/images/events/event-1.jpg" alt="Networking">
+                </div>
+                <div class="desc-events">
+                  <h3>Networking</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="events-block">
+                <div class="img-events">
+                  <img src="/images/events/event-2.jpg" alt="Team building">
+                </div>
+                <div class="desc-events">
+                  <h3>Team building</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="events-block">
+                <div class="img-events">
+                  <img src="/images/events/event-3.jpg" alt="Concours de pitch">
+                </div>
+                <div class="desc-events">
+                  <h3>concours de pitch</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="events-block">
+                <div class="img-events">
+                  <img src="/images/events/event-4.jpg" alt="Meet up coffee">
+                </div>
+                <div class="desc-events">
+                  <h3>meet up coffee</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae imperdiet erat. Aliquam at mauris eu quam ultrices commodo at at lectus. Donec tempor sem sit amet libero posuere, eu varius nibh posuere.</p>
+                  <button type="button" name="button">En savoir plus</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- *** FOOTER *** -->
+    <!-- <div id="footer" class="clear floatleft">
+      <div class="contact">
+        <div class="w33pc floatleft contact-block">
+          <h3>Nous contacter</h3>
+          <form action="#">
+            <input type="text" name="nom" placeholder="Nom" />
+            <input class="email" type="mail" name="email" placeholder="Email" />
+            <textarea name="name" rows="8" cols="80" placeholder="Votre message"></textarea>
+            <input class="submit" type="submit" name="" value="Envoyer" />
+          </form>
+        </div>
+        <div class="w33pc floatleft contact-block">
+          <h3>Nous situer</h3>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5306066039066!2d2.3491696156015016!3d48.86716060804321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e174b451043%3A0x511fde7744138eee!2s227+Rue+St+Denis%2C+75002+Paris!5e0!3m2!1sfr!2sfr!4v1494342844413" width="430" height="230" frameborder="0" style="border:0" allowfullscreen></iframe>            
+          </div>
+        </div>
+        <div class="w33pc floatleft contact-block">
+          <h3>Suivez-nous</h3>
+        </div>
+      </div>
+      <div class="bottom-footer">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="">Plan du site</a></li>
+          <li><a href="">Accessibilité</a></li>
+          <li><a href="">Mentions légales</a></li>
+        </ul>
+      </div>
+    </div> -->
+
