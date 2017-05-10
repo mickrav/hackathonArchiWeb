@@ -117,12 +117,15 @@ configuration:
 	Url Website:
 	http://coffeeshop.sur.paris/
 	
-	
+
 	sign in with:
 
 	email: admin@coffeeshop.com
 	passwd: AdminPage!
 
+
+	///need authentication to show button "reserver" and reservation
+	
 	All CRUD Work with:
 	http://coffeeshop.sur.paris/post //CRUD post
 	http://coffeeshop.sur.paris/chat //CRUD chat
