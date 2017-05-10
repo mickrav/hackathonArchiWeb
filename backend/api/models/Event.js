@@ -25,6 +25,10 @@ module.exports = {
   		// required: true
   	},
 
+  	description: {
+  		type: 'string'
+  	},
+
   	// price: {
   	// 	type: 'float'
   	// },

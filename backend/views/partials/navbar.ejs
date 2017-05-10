@@ -15,24 +15,36 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="defaultNavbar1">
-      <ul class="nav navbar-nav">
-        
-        <li><a href="/about">Le concept</a></li>
-        <li><a href="/coffeeShop">Le coffee-shop</a></li>
-        <li><a href="/coworking">Le coworking</a></li>
-        <li><a href="/events">Events</a></li>
-        <% if (req.session.authenticated) { %>
-        	<li><a href="/reserver" >reserver</a></li>
-		<% } %>
-        
-      </ul>
+      <% if (!req.session.isAdmin) { %>
+        <ul class="nav navbar-nav">
+          
+          <li><a href="/about">Le concept</a></li>
+          <li><a href="/coffeeShop">Le coffee-shop</a></li>
+          <li><a href="/coworking">Le coworking</a></li>
+          <li><a href="/events">Events</a></li>
+          <% if (req.session.authenticated) { %>
+          	<li><a href="/reserver" >reserver</a></li>
+  		    <% } %>
+          
+        </ul>
+      <% } %>
+      <% if (req.session.isAdmin) { %>
+        <ul class="nav navbar-nav">
+          
+          <li><a href="/admin/post">Add Post</a></li>
+          <li><a href="/admin/event">Add event</a></li>
+          <li><a href="/admin/shop">Add Shop item</a></li>
+          <li><a href="/admin/service">Add service</a></li>
+          
+        </ul>
+      <% } %>
 
       	<% if (req.session.authenticated) { %>
       		<div class="navbar-right">
       			<a href="/logout" class="btn btn-default " role="button">Sign Out</a>
       		</div>
   			
-		<% } %>
+		    <% } %>
 
 		<% if (!req.session.authenticated) { %>
   			<form action="/login" method="post" class="navbar-form navbar-right" role="search">

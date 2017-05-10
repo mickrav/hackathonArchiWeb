@@ -15,8 +15,12 @@ module.exports = {
   	name: {
   		type: 'string'
   	},
+    description:{
+      type:'string'
+    },
   	status:{
-  		type:'string' //dispo, indisponible 
+  		type:'string', //dispo, indisponible 
+      defaultTo: 'dispo'
   	},
   	price: {
   		type: 'float'

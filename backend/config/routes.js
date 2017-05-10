@@ -42,12 +42,24 @@ module.exports.routes = {
    'get /admin/post': {
     view: 'pages/admin/post'
   },
-  'post /admin/post/article': 'PostController.upload',
+  'POST /admin/post/article': 'PostController.upload',
 
+  //shop
   'get /admin/shop': {
     view: 'pages/admin/shop'
   },
-  'post /admin/shop/article': 'ShopController.upload',
+  'POST /admin/shop/article': 'ShopController.upload',
+
+  // events
+  'get /admin/event': {
+    view: 'pages/admin/event'
+  },
+  'POST /admin/event/post': 'EventController.upload',
+   // events
+  'get /admin/service': {
+    view: 'pages/admin/service'
+  },
+  'POST /admin/service/post': 'ServiceController.upload',
 
    /***********************Reservations****************/ 
 
